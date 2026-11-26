@@ -1,0 +1,1 @@
+user-service.dev.svc.cluster.local
