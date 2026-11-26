@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-service
+  namespace: dev
+  labels:
+    app: my-service
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: my-service  #Manage pods that have label app=my-service
+
+  template:
+    metadata:
+      labels:
+        app: my-service  #Service uses this label to send traffic. every pod created by this deployment will have this label
+
+    spec:
+      containers:
+        - name: my-service
+          image: <your-ecr-image>:latest
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8446
+
+          # ✅ Environment Variables from ConfigMap
+          env:
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DB_HOST
+
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DB_PORT
+
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DB_NAME
+
+            # ✅ Secrets
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_USERNAME
+
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_PASSWORD
+        
+
+          # ✅ Resource Requests & Limits (IMPORTANT)
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"  #Minimum resources guaranteed for the container
+            limits:
+              cpu: "500m"
+              memory: "512Mi"  #Maximum resources the container can use. If it exceeds, it may be throttled or killed.
