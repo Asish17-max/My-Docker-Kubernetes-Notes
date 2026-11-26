@@ -1,0 +1,23 @@
+#!/bin/bash
+
+THRESHOLD=85
+USUAGE=$(df -h | awk '{print $5}' | sed 's/%//g' | sort -n | tail -1)
+top -bn1 | grep "Cpu(s)" | awk "{print$2 $4}'
+grep -i "error" $log_file | wc -l
+find $LOG_DIR -type f -name "*.log" -mtime +7 -exec rm -f {} \;
+free -h | awk 'NR===2 {print $3/$2 *100}'
+
+## Service health status
+
+#!/bin/bash
+
+# Script to check the health of service is running or not
+
+service = "my-service"
+
+if [ pgrep -x "$service" > /dev/null ]
+then
+    echo "$service is running"
+else
+    echo "$service is not running"
+fi
