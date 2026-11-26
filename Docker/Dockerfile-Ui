@@ -1,0 +1,21 @@
+FROM tomcat:9
+
+# Set working directory
+WORKDIR /usr/local/tomcat
+
+# Copy SSL certificates and Tomcat configuration (if applicable)
+# Ensure your configuration files are prepared beforehand.
+COPY server.xml conf/server.xml
+
+# Copy your Angular micro-frontends into the Tomcat webapps directory
+COPY Webapps/ROOT/ webapps/ROOT/
+COPY Webapps/mfeDashboard/ webapps/mfeDashboard/
+COPY Webapps/mfeWorkordermanagement/ webapps/mfeWorkordermanagement/
+COPY Webapps/user-management-mfe/ webapps/user-management-mfe/
+
+# Expose default ports
+EXPOSE 8080 443
+
+# Run Tomcat
+CMD ["catalina.sh", "run"]
+

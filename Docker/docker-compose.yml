@@ -1,0 +1,85 @@
+version: '3.9'
+services:
+  api-service-registry:
+    build:
+      context: ./
+      dockerfile: Dockerfile-apiregistry
+    image: microservices-api-service-registry
+    ports:
+      - "8761:8761"
+    networks:
+      - app-network
+
+  api-gateway:
+    build:
+      context: ./
+      dockerfile: Dockerfile-apigateway
+    hostname: api-gateway
+    image: microservices-api-gateway
+    ports:
+      - "9191:9191"
+    depends_on:
+      - api-service-registry 
+    networks:
+      - app-network
+
+  ffaworkorder:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Ffaworkorder
+    hostname: ffaworkorder
+    image: microservices-ffaworkorder
+    ports:
+      - "4262:4262"
+    networks:
+      - app-network
+    depends_on:
+      - database
+      - api-service-registry
+      - api-gateway
+
+  user-service:
+    build:
+      context: ./
+      dockerfile: Dockerfile-usermanagement
+    hostname: user-service
+    image: microservices-user-service
+    ports:
+      - "8661:8661"
+    networks:
+      - app-network
+    depends_on:
+      - database
+      - api-service-registry
+      - api-gateway
+
+  ui:
+    build:
+      context: ./
+      dockerfile: Dockerfile-Ui
+    hostname: ui
+    image: microservices-ui
+    ports:
+      - "443:443"
+      - "8080:8080"
+    networks:
+      - app-network
+    
+
+  database:
+    image: mysql:8
+    container_name: mysql-db
+    environment:
+      DB_HOST: localhost
+      DB_NAMES: ffa
+      DB_USER: root
+      DB_PASSWORD: 32zl9LGnr9Sr6xef/N8xujGqgfta2v6QSVPlMABBvm/vIwWcnKnIRIxKbYdF4EzgKUF9IA==
+      DB_DRIVER: com.mysql.cj.jdbc.Driver
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

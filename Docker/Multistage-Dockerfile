@@ -1,0 +1,16 @@
+FROM burningion/ecommerce-spree-observability:latest as builder
+
+COPY pom.xml .
+COPY src ./src
+COPY config ./config
+
+RUN mvn clean package -DskipTests
+FROM openjdk:17-jdk-alpine
+
+WORKDIR /app
+
+COPY --from=builder /app/target/user-service.jar .
+COPY --from=builder /app/config ./config
+EXPOSE 8432
+CMD ["java","-jar","user-service.jar"]
+

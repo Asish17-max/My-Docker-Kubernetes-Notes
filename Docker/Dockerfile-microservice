@@ -1,0 +1,8 @@
+FROM Jdk...
+
+WORKDIR /app
+
+COPY user-service.jar .
+COPY config ./config
+EXPOSE 8432
+CMD ["java","-jar","user-service.jar"]

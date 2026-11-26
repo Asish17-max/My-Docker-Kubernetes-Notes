@@ -1,0 +1,17 @@
+FROM openjdk:17-jdk-alpine
+
+ENV SERVICE_REGISTRY_URL=http://api-service-registry:8761/eureka/
+
+# Set working directory
+WORKDIR /app
+
+# Copy build artifacts
+COPY /api-gateway.jar .
+COPY /src/main/resources/keystore/srs30.keystore /app/src/main/resources/keystore/
+
+
+# Expose port
+EXPOSE 9191
+
+# Start the application
+CMD ["java", "-jar", "api-gateway.jar"]

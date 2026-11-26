@@ -1,0 +1,14 @@
+FROM openjdk:17-jdk-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy build artifacts
+COPY /api-service-registry.jar .
+COPY /src . 
+
+# Expose port
+EXPOSE 8761
+
+# Start the application
+CMD ["java", "-jar", "api-service-registry.jar"]

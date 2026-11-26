@@ -1,0 +1,10 @@
+FROM python
+
+WORKDIR /app
+
+COPY repo-app/app.py .
+COPY repo-app/requirements.txt .
+
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD ["python3", "app.py"]

@@ -1,0 +1,5 @@
+cidr_block_vpc = "10.0.0.0/16"
+cidr_block_pubsubnet = "10.0.1.0/24"
+cidr_block_privsubnet = "10.0.2.0/24"
+ami_id = "ami-0c55b159cbfafe1f0"
+instance_type = "t2.micro"
