@@ -1,0 +1,552 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm,right=1.5cm,top=1.3cm,bottom=1.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+% Tight bullet spacing (APPROVED)
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt}
+
+% Reduce space before/after section titles (KEY CHANGE)
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\begin{document}
+
+%==================== HEADER (2 LINES) ====================
+\textbf{\LARGE Asish Tirumani} \\
+Visakhapatnam, India \quad | \quad
+\href{mailto:tirumaniasish@gmail.com}{tirumaniasish@gmail.com} \quad | \quad
++91 7675916398 \quad | \quad LinkedIn
+
+%==================== PROFILE ====================
+\section{Profile Summary}
+DevOps Engineer with \textbf{3 years of hands-on experience} designing, automating, and operating scalable CI/CD pipelines, cloud infrastructure, and containerized platforms. Proven expertise in \textbf{Jenkins, Git, Docker, Kubernetes, Terraform, AWS, and Azure}, with a strong focus on reliability engineering, infrastructure as code, GitOps, monitoring, and zero-downtime deployments across production environments.
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\textbf{Associate Engineer} \\
+L\&T Digital Energy Solutions \hfill \textbf{July 2023 -- Present}
+
+\textbf{CI/CD, Containers, and Kubernetes}
+\begin{itemize}
+  \item Architected and operated \textbf{enterprise-grade CI/CD pipelines} using Jenkins, Git, SonarQube, Argo CD, and Docker for Java, Node.js, and .NET microservices across multiple environments.
+  \item Automated build, test, and deployment workflows using \textbf{Git webhooks and pipeline-as-code}, reducing manual release effort by \textbf{60\%}.
+  \item Enforced \textbf{code quality and security gates} by integrating SonarQube quality profiles and vulnerability checks into CI pipelines.
+  \item Applied \textbf{GitOps-driven Kubernetes deployments} with declarative manifests, automated reconciliation, and full auditability.
+  \item Optimized Docker images using \textbf{multi-stage builds, minimal base images, and layer optimization}, reducing image size by \textbf{35--40\%}.
+  \item Orchestrated production-grade \textbf{Amazon EKS deployments} using rolling, blue-green, and canary strategies enabling zero-downtime releases.
+\end{itemize}
+
+\textbf{Cloud Infrastructure and Infrastructure as Code}
+\begin{itemize}
+  \item Worked extensively with \textbf{AWS services} including VPC, EC2, EKS, IAM, ALB, Auto Scaling, S3, and CloudWatch.
+  \item Designed secure, multi-tier \textbf{VPC architectures} with public and private subnets, NAT Gateways, routing tables, and security groups.
+  \item Provisioned and managed cloud infrastructure using \textbf{Terraform (11+ reusable modules)}, reducing manual provisioning effort by \textbf{50\%}.
+  \item Implemented \textbf{Infrastructure as Code best practices} including remote state management, state locking, and modularization.
+\end{itemize}
+
+\textbf{DevOps Automation and Scripting}
+\begin{itemize}
+  \item Developed \textbf{10+ reusable Shell/Bash and Python automation scripts} for health checks, log analysis, deployments, backups, and routine system maintenance.
+  \item Reduced incident response time by \textbf{40\%} by standardizing troubleshooting workflows and operational runbooks.
+\end{itemize}
+
+\textbf{Monitoring, Logging, and Observability}
+\begin{itemize}
+  \item Built and maintained \textbf{10+ Grafana dashboards} monitoring microservices, servers, and Kubernetes workloads.
+  \item Monitored \textbf{20+ production workloads} using Prometheus, Grafana, and AWS CloudWatch.
+  \item Improved \textbf{MTTD and MTTR by 35--40\%} through alert tuning and metric-log correlation.
+  \item Enforced centralized logging using the \textbf{ELK Stack} to analyze application and system events.
+\end{itemize}
+
+%==================== CERTIFICATIONS ====================
+\section{Certifications}
+HashiCorp Certified: Terraform Associate (003)
+
+%==================== EDUCATION ====================
+\section{Education}
+\textbf{Bachelor of Computer Science} \\
+Andhra University \hfill April 2023
+
+%==================== SKILLS ====================
+\section{Technical Skills}
+
+\textbf{DevOps \& CI/CD:} Jenkins, Git, Docker, Kubernetes, Argo CD, Maven, Nexus, Ansible \\
+\textbf{Cloud:} AWS (EKS, EC2, VPC, IAM, CloudWatch, S3), Azure \\
+\textbf{IaC:} Terraform \\
+\textbf{Scripting:} Shell, Bash, Python \\
+\textbf{Monitoring:} Prometheus, Grafana, Loki, New Relic, ELK Stack \\
+\textbf{Security:} SonarQube, Secrets Management, Policy-Driven Deployments \\
+\textbf{Databases:} MySQL, PostgreSQL, MSSQL (Basic) \\
+\textbf{Practices:} GitOps, Zero-Downtime Deployments, Disaster Recovery, Self-Healing Systems \\
+\textbf{Tools:} Jira, Confluence
+
+\end{document}
+
+
+_________________________________________________________________________________________________________________________________
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm,right=1.5cm,top=1.3cm,bottom=1.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+% Tight bullet spacing (APPROVED)
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt}
+
+% Reduce space before/after section titles (KEY CHANGE)
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\begin{document}
+
+%==================== HEADER (2 LINES) ====================
+\textbf{\LARGE Asish Tirumani} \\
+Visakhapatnam, India \quad | \quad
+\href{mailto:tirumaniasish@gmail.com}{tirumaniasish@gmail.com} \quad | \quad
++91 7675916398 \quad | \quad
+\href{https://www.linkedin.com/in/asish-tirumani-9153ba265/}{LinkedIn}
+
+%==================== PROFILE ====================
+\section{Profile Summary}
+DevOps Engineer with \textbf{3 years of hands-on experience} designing, automating, and operating scalable CI/CD pipelines, cloud infrastructure, and containerized platforms. Proven expertise in \textbf{Jenkins, Git, Docker, Kubernetes, Terraform, AWS, and Azure}, with a strong focus on reliability engineering, infrastructure as code, GitOps, monitoring, and zero-downtime deployments across production environments.
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\textbf{Associate Engineer} \\
+L\&T Digital Energy Solutions \hfill \textbf{July 2023 -- Present}
+
+\textbf{CI/CD, Containers, and Kubernetes}
+\begin{itemize}
+  \item Architected and operated \textbf{enterprise-grade CI/CD pipelines} using Jenkins, Git, SonarQube, Argo CD, and Docker for Java, Node.js, and .NET microservices across multiple environments.
+  \item Automated build, test, and deployment workflows using \textbf{Git webhooks and pipeline-as-code}, reducing manual release effort by \textbf{60\%}.
+  \item Enforced \textbf{code quality and security gates} by integrating SonarQube quality profiles and vulnerability checks into CI pipelines.
+  \item Applied \textbf{GitOps-driven Kubernetes deployments} with declarative manifests, automated reconciliation, and full auditability.
+  \item Optimized Docker images using \textbf{multi-stage builds, minimal base images, and layer optimization}, reducing image size by \textbf{35--40\%}.
+  \item Orchestrated production-grade \textbf{Amazon EKS deployments} using rolling, blue-green, and canary strategies enabling zero-downtime releases.
+\end{itemize}
+
+\textbf{Cloud Infrastructure and Infrastructure as Code}
+\begin{itemize}
+  \item Engineered highly available AWS infrastructure using \textbf{Multi-AZ RDS, Application Load Balancers (ALB), Auto Scaling Groups, and health checks}, achieving \textbf{99.95\%+ uptime} across production environments.
+  \item Designed secure and scalable \textbf{VPC architectures} with public/private subnets, NAT Gateways, route tables, NACLs, and IAM role-based access control for 3-tier applications.
+  \item Provisioned and managed infrastructure using \textbf{Terraform (12+ reusable modules)} with remote state management and state locking, reducing provisioning time by \textbf{50\%}.
+  \item Executed automated \textbf{RDS backups, read replicas, and performance tuning}, improving database reliability and reducing latency by \textbf{30\%}.
+\end{itemize}
+
+\textbf{DevOps Automation and Scripting}
+\begin{itemize}
+  \item Developed \textbf{10+ reusable Shell/Bash and Python automation scripts} for health checks, log analysis, deployments, backups, and routine system maintenance.
+  \item Reduced incident response time by \textbf{40\%} by standardizing troubleshooting workflows and operational run books.
+\end{itemize}
+
+\textbf{Monitoring, Logging, and Observability}
+\begin{itemize}
+  \item Built and maintained \textbf{10+ Grafana dashboards} monitoring microservices, servers, and Kubernetes workloads.
+  \item Monitored \textbf{20+ production workloads} using Prometheus, Grafana, and AWS CloudWatch.
+  \item Enhanced \textbf{MTTD and MTTR by 35--40\%} by alert tuning and metric-log correlation.
+  \item Centralized logging enforced using the \textbf{ELK Stack} to analyze application and system events.
+\end{itemize}
+
+%==================== CERTIFICATIONS ====================
+\section{Certifications}
+\href{https://www.credly.com/earner/earned/badge/797b33f0-22d8-4ec3-b618-2cd66a3e8d4c--AWS}{AWS Certified Solutions Architect -- Associate}
+\hfill
+\href{https://www.credly.com/earner/earned/badge/5d2f5f47-fb92-48ec-8b89-182033121776--terraform}{HashiCorp Certified: Terraform Associate (003)}
+
+%==================== EDUCATION ====================
+\section{Education}
+\textbf{Bachelor of Computer Science} \\
+Andhra University \hfill April 2023
+
+%==================== SKILLS ====================
+\section{Technical Skills}
+
+\textbf{DevOps \& CI/CD:} Jenkins, Git, Docker, Kubernetes, Argo CD, Maven, Nexus, Ansible \\
+\textbf{Cloud:} AWS (EKS, EC2, VPC, IAM, CloudWatch, S3), Azure \\  \textbf{IaC:} Terraform \\
+\textbf{Scripting:} Shell, Bash, Python \\
+\textbf{Monitoring:} Prometheus, Grafana, Loki, New Relic, ELK Stack \\
+\textbf{Security:} SonarQube, Secrets Management, Policy-Driven Deployments \\
+\textbf{Databases:} MySQL, PostgreSQL, MSSQL (Basic),No SQL,DynamoDB \\
+\textbf{Practices:} GitOps, Zero-Downtime Deployments, Disaster Recovery, Self-Healing Systems \\
+\textbf{Tools:} Jira, Confluence
+
+\end{document}
+
+
+
+_________________________________________________________________________________________________________________________________
+
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm,right=1.5cm,top=1.3cm,bottom=1.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt}
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\begin{document}
+
+%==================== HEADER ====================
+\textbf{\LARGE Asish Tirumani} \\
+Visakhapatnam, India \quad | \quad
+\href{mailto:tirumaniasish@gmail.com}{tirumaniasish@gmail.com} \quad | \quad
++91 7675916398 \quad | \quad
+\href{https://www.linkedin.com/in/asish-tirumani-9153ba265/}{LinkedIn}
+
+%==================== PROFILE ====================
+\section{Profile Summary}
+
+DevOps Engineer with \textbf{3+ years of experience} designing, automating, and operating \textbf{highly available cloud-native production systems}. Strong expertise in \textbf{AWS, Kubernetes (EKS), Terraform, Jenkins, Docker, and Ansible} with proven success in reducing downtime, accelerating release cycles, and improving system reliability. Experienced in Agile environments supporting mission-critical energy and grid systems with \textbf{99.95\%+ uptime SLAs}.
+
+%==================== TECHNICAL SKILLS ====================
+\section{Technical Skills}
+
+\textbf{Cloud Platforms:} AWS (EKS, EC2, VPC, IAM, S3, RDS, ECR, ELB, CloudWatch, CloudTrail), Azure (Basic) \\
+\textbf{Containerization \& Orchestration:} Docker, Kubernetes, Amazon EKS, Helm \\
+\textbf{CI/CD \& DevOps Tools:} Jenkins, Git, Maven, Nexus, SonarQube, Argo CD \\
+\textbf{Infrastructure as Code:} Terraform (Reusable Modules, Remote State, State Locking), Ansible (Playbooks, Jinja2 Templates) \\
+\textbf{Monitoring \& Observability:} Prometheus, Grafana, AWS CloudWatch, ELK Stack \\
+\textbf{Scripting:} Bash, Shell, Python \\
+\textbf{Databases:} MySQL, PostgreSQL, MSSQL (Basic), DynamoDB \\
+\textbf{Practices:} GitOps, High Availability Architecture, Zero-Downtime Deployment, Disaster Recovery, Agile/Scrum, Capacity Planning, Performance Tuning \\
+\textbf{Tools:} Jira, Confluence
+
+%==================== EXPERIENCE ====================
+\section{Professional Experience}
+
+\textbf{Associate Engineer – DevOps} \\
+L\&T Digital Energy Solutions \hfill \textbf{July 2023 -- Present}
+
+%==================== NTAMC ====================
+\textbf{Project: NTAMC – National Transmission Asset Monitoring Center (Power Grid)}
+
+\begin{itemize}
+  \item Designed and provisioned \textbf{AWS production infrastructure} using Terraform including EKS, VPC, Subnets, NACLs, IAM, ELB, RDS, and ECR.
+  \item Architected \textbf{Multi-AZ high availability EKS clusters} achieving \textbf{99.95\% uptime} for mission-critical power grid systems.
+  \item Reduced infrastructure provisioning time by \textbf{50\%} through reusable Terraform modules and automated deployments.
+  \item Implemented Auto Scaling and ELB-based traffic distribution reducing downtime by \textbf{45\%}.
+  \item Integrated CloudWatch dashboards and alerting reducing MTTR by \textbf{40\%}.
+  \item Enabled audit and compliance logging using AWS CloudTrail improving governance and traceability.
+  \item Performed capacity planning and performance tuning resulting in \textbf{35\% better resource utilization}.
+\end{itemize}
+
+%==================== HEMS ====================
+\textbf{Project: HEMS – Hybrid Energy Management System}
+
+\begin{itemize}
+  \item Automated deployments using \textbf{Ansible Playbooks with Jinja2 templating} ensuring environment consistency across Dev, QA, and Production.
+  \item Reduced manual deployment errors by \textbf{60\%} through configuration automation.
+  \item Developed automation scripts in Bash and Python improving operational efficiency by \textbf{40\%}.
+  \item Implemented Prometheus and Grafana monitoring reducing incident response time by \textbf{35\%}.
+  \item Reduced deployment duration from hours to \textbf{< 20 minutes}.
+\end{itemize}
+
+%==================== PPC ====================
+\textbf{Project: PPC – Power Plant Controller}
+
+\begin{itemize}
+  \item Designed CI/CD pipelines using Jenkins, Git, and Maven enabling automated builds and releases.
+  \item Reduced release cycle time by \textbf{50\%} through pipeline automation and artifact versioning.
+  \item Containerized microservices using Docker reducing environment inconsistencies by \textbf{70\%}.
+  \item Implemented zero-downtime deployment strategies improving production stability.
+  \item Built Prometheus + Grafana dashboards for 15+ services improving observability and reducing incidents by \textbf{30\%}.
+\end{itemize}
+
+%==================== SCADA ====================
+\textbf{Project: SCADA – BSPGCL Bihar Power}
+
+\begin{itemize}
+  \item Built Jenkins-based CI/CD automation reducing manual deployment effort by \textbf{65\%}.
+  \item Improved release frequency from bi-weekly to weekly improving delivery efficiency by \textbf{40\%}.
+  \item Implemented proactive monitoring reducing MTTD by \textbf{40\%}.
+  \item Enhanced production reliability through alert optimization and system hardening.
+  \item Worked in Agile/Scrum model supporting sprint-based releases and continuous improvement.
+\end{itemize}
+
+%==================== CERTIFICATIONS ====================
+\section{Certifications}
+
+\href{https://www.credly.com/earner/earned/share/797b33f0-22d8-4ec3-b618-2cd66a3e8d4c}{AWS Certified Solutions Architect -- Associate}
+\hfill
+\href{https://www.credly.com/earner/earned/badge/5d2f5f47-fb92-48ec-8b89-182033121776}{HashiCorp Certified: Terraform Associate (003)}
+
+%==================== EDUCATION ====================
+\section{Education}
+
+\textbf{Bachelor of Computer Science} \\
+Andhra University \hfill April 2023
+
+\end{document}
+
+_________________________________________________________________________________________________________________________________
+Workday
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[left=2cm,right=2cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\begin{document}
+
+%==================== HEADER ====================
+\textbf{\Large Asish Tirumani} \\
+Visakhapatnam, India \\
+Email: \href{mailto:tiruasish7@gmail.com}{tiruasish7@gmail.com} \\
+Phone: +91 7675916398 \\
+LinkedIn: \href{https://www.linkedin.com/in/asish-tirumani-9153ba265/}{https://www.linkedin.com/in/asish-tirumani-9153ba265/}
+
+%==================== PROFILE ====================
+\section*{Profile Summary}
+DevOps Engineer with 3+ years of experience building cloud-native and Environment-as-Code solutions on AWS using EC2, EKS, S3, RDS, and ELB.  
+Skilled in Terraform, Python automation, Kubernetes operations, and CI/CD pipelines with focus on scalability, reliability, and cost optimization.  
+Experienced in troubleshooting distributed systems and maintaining audit-compliant infrastructure with 99.95\% uptime.
+
+%==================== TECHNICAL SKILLS ====================
+\section*{Technical Skills}
+
+Cloud Platforms: AWS (EC2, S3, IAM, VPC, ELB, CloudWatch,SgaeMaker,Comprehend,ML) \\
+Containers: Docker, Kubernetes, Amazon EKS, Helm \\
+CI/CD Tools: Jenkins, Git, Maven, Azure DevOps \\
+Infrastructure as Code: Terraform, Ansible \\
+Monitoring: Prometheus, Grafana, Dynatrace, Datadog, ELK Stack \\
+Scripting: Shell, Bash, Python, Linux (Ubuntu, RHEL) \\
+Practices: CI/CD, DevSecOps, SRE, Zero-Downtime Deployments \\
+Tools: Jira, Confluence
+
+%==================== KEY ACHIEVEMENTS ====================
+\section*{Key Achievements}
+
+\begin{itemize}[leftmargin=*]
+  \item Reduced release cycle time by 50\% and increased deployment frequency through CI/CD automation using Jenkins, Git, Maven, and SonarQube.
+  \item Reduced infrastructure cost by 20\% by optimizing AWS resources provisioned using Terraform across multi-AZ architecture.
+  \item Improved monitoring visibility for 20+ services using Prometheus and Grafana, reducing MTTD by 35\% and MTTR by 30\%.
+  \item Achieved 99.9\%+ application availability using Kubernetes with rolling and zero-downtime deployment strategies.
+\end{itemize}
+
+%==================== EXPERIENCE ====================
+\section*{Professional Experience}
+
+\textbf{Associate Engineer – DevOps} \\
+L\&T Digital Energy Solutions \\
+July 2023 -- Present
+
+\textbf{Projects: PPC – Power Plant Controller and SCADA – BSPGCL}
+
+\begin{itemize}[leftmargin=*]
+  \item Built end-to-end CI/CD pipelines using Jenkins, Git, and Maven with SonarQube integration improving code quality by 45\%.
+  \item Managed Kubernetes deployments using GitOps practices improving rollback efficiency by 50\%.
+  \item Deployed containerized applications using Docker and Kubernetes achieving 99.9\% availability.
+  \item Automated build and deployment workflows reducing release cycle time by 50\%.
+  \item Maintained Kubernetes ConfigMaps and Secrets for secure configuration management.
+  \item Troubleshot Kubernetes issues reducing incident resolution time by 40\%.
+  \item Monitored 20+ services using Prometheus and Grafana reducing downtime by 45\%.
+\end{itemize}
+
+\textbf{Project: NTAMC – National Transmission Asset Monitoring Center}
+
+\begin{itemize}[leftmargin=*]
+  \item Provisioned AWS infrastructure using Terraform including VPC, ELB, Route53, IAM, and RDS across multiple Availability Zones.
+  \item Built highly available EKS clusters achieving 99.95\% uptime.
+  \item Optimized Docker images reducing size by 45\% and improving deployment speed.
+  \item Configured RDS Multi-AZ with automated failover improving recovery time by 60\%.
+  \item Implemented Route53 failover strategy reducing service disruption by 50\%.
+  \item Improved infrastructure provisioning time by 50\% using reusable Terraform modules.
+  \item Monitored systems using CloudWatch improving incident response time by 40\%.
+\end{itemize}
+
+\textbf{Project: NowCast – ML-Based Forecasting Application}
+
+\begin{itemize}[leftmargin=*]
+  \item Deployed \textbf{ML-based Streamlit application} on AWS GPU-enabled (NVIDIA) EC2 instances enabling real-time model inference and visualization.
+  \item Configured \textbf{end-to-end ML deployment workflows} including model packaging, environment setup, and dependency management for consistent releases.
+  \item Automated \textbf{application deployment and updates} using Bash/Python scripts reducing manual effort by \textbf{40\%} and improving deployment reliability.
+  \item Optimized GPU-based workloads improving model inference performance by \textbf{30\%}.
+  \item Established basic monitoring and health checks ensuring application availability and stability in production environments.
+\end{itemize}
+
+%==================== CERTIFICATIONS ====================
+\section*{Certifications}
+
+\href{https://www.credly.com/earner/earned/badge/797b33f0-22d8-4ec3-b618-2cd66a3e8d4c}{AWS Certified Solutions Architect – Associate} \\
+\href{https://www.credly.com/earner/earned/badge/5d2f5f47-fb92-48ec-8b89-182033121776}{HashiCorp Certified Terraform Associate}
+
+%==================== EDUCATION ====================
+\section*{Education}
+
+Bachelor of Computer Science \\
+Andhra University \\
+April 2023
+
+\end{document}
+
+-------------------------------------------------------------------------------------------------------------------------------
+My ultimate
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm,right=1.5cm,top=1.3cm,bottom=1.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt}
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\begin{document}
+
+%==================== HEADER ====================
+\textbf{\LARGE Asish Tirumani} \\
+Visakhapatnam, India \quad | \quad
+\href{mailto:tirumaniasish@gmail.com}{tirumaniasish@gmail.com} \quad | \quad
++91 7675916398 \quad | \quad
+\href{https://www.linkedin.com/in/asish-tirumani-9153ba265/}{LinkedIn}
+
+%==================== PROFILE ====================
+\section{Profile Summary}
+
+Cloud DevOps Engineer with \textbf{3+ years of experience} designing, automating, and operating \textbf{highly available cloud-native  systems}. Strong expertise in \textbf{AWS, Kubernetes (EKS), Terraform, Jenkins, Docker, and Monitoring} with proven success in reducing downtime, accelerating release cycles, and improving system reliability. Experienced in Agile environments supporting mission-critical energy and grid systems.
+
+%==================== TECHNICAL SKILLS ====================
+\section{Technical Skills}
+
+\textbf{Cloud Platforms:} AWS (EKS, EC2, VPC, S3, ALB, IAM), Azure  \\
+\textbf{Containerization \& Orchestration:} Docker, Kubernetes, Amazon EKS \\
+\textbf{CI/CD \& DevOps Tools:} Jenkins, Git,Maven, Github Actions, SonarQube,Trivy \\
+\textbf{Infrastructure as Code:} Terraform (Reusable Modules, Remote State, State Locking) \\
+\textbf{Monitoring \& Observability:} Prometheus, Grafana, AWS CloudWatch, ELK Stack \\
+\textbf{Scripting:} Bash, Shell, Python , REST API \\
+\textbf{Practices:} GitOps, High Availability Architecture, DevSecOps ,Security , Automation\\
+\textbf{Tools:} Jira, Confluence
+
+%==================== KEY ACHIEVEMENTS ====================
+\section*{Key Achievements}
+
+\begin{itemize}[leftmargin=*]
+  \item Reduced the release cycle time by 50\% and increased the deployment frequency by automating the CI/CD pipelines using Jenkins, Git, Maven, SonarQube, and scheduled builds.
+  \item Achieved 10\%  reduction in infrastructure cost by provisioning and optimizing the AWS infrastructure using Terraform (VPC, ELB, Route53, RDS Multi-AZ ).
+  \item Monitored system and application metrics using Prometheus and Grafana, helping reduce downtime through proactive alerting and performance tracking.
+\item Deployed and managed microservices on Kubernetes using rolling updates, ensuring minimal downtime and stable releases across Dev and QA environments.
+\end{itemize}
+
+%==================== EXPERIENCE ====================
+\section*{Professional Experience}
+
+\textbf{Associate Engineer – DevOps} \\
+L\&T Digital Energy Solutions \hfill July 2023 -- Present
+
+%==================== PPC  ====================
+\textbf{Projects: PPC – Power Plant Controller \& SCADA}
+
+\begin{itemize}[leftmargin=*]
+\item Collaborated across \textbf{Dev, QA, and Production teams} throughout the \textbf{SDLC lifecycle}, ensuring smooth build, test, and release processes with improved cross-team coordination and faster issue resolution.
+\item Designed and implemented end-to-end CI/CD pipelines using Jenkins, Git, and Maven for \textbf{Microservices, C\#, and C++ applications}, improving deployment efficiency by \textbf{20\%}.
+\item Integrated \textbf{SAST and SCA} using SonarQube for \textbf{Java, Node.js, and Python applications}, reducing production defects by \textbf{10\%}.
+  \item Streamlined \textbf{GitOps-based deployments using Argo CD} for Kubernetes clusters, enabling declarative, version-controlled releases and improving rollback efficiency by \textbf{30\%}.
+  \item Governed Kubernetes ConfigMaps and Secrets for secure DB credentials, eliminating hardcoded secrets.
+  \item Performed Kubernetes troubleshooting (pod crashes, HPA tuning, resource optimization), reducing incident resolution time by 30\%.
+\item Configured \textbf{Kubernetes Ingress (API Gateway)} to route external traffic to microservices, enabling efficient traffic management and secure access to services within the cluster.
+\item Integrated centralized logging using ELK (Elasticsearch, Logstash, Kibana) for \textbf{20+ microservices}, creating Kibana dashboards for log analysis and improving issue detection and troubleshooting.
+\item Facilitated sprint-based releases in \textbf{Agile/Scrum environment}.
+\end{itemize}
+
+%==================== APM ====================
+\textbf{Project: APM – Asset Performance Monitoring}
+
+\begin{itemize}[leftmargin=*]
+  \item Orchestrated and provisioned enterprise-grade AWS infrastructure using Terraform modules, including VPC (public/private subnets across 2 AZs), NACLs, IAM, ELB, Route 53, ACM.
+  \item Implemented Multi-Stage Docker builds reducing container image size by 25\% .
+  \item Assisted while Performing \textbf{blue-green deployments on Kubernetes (EKS)} reducing release downtime and enabling safe rollbacks during production releases.
+  \item Maintained \textbf{Terraform configurations across Dev/UAT/Prod} using separate backends and state files, ensuring consistent and isolated infrastructure deployments.
+  \item Followed \textbf{DevSecOps best practices} by securely fetching credentials from \textbf{HashiCorp Vault} during Terraform-based infrastructure provisioning.
+\item Optimized infrastructure cost for read-heavy workloads by leveraging \textbf{Amazon RDS Read Replicas} for scaling database reads, avoiding unnecessary caching layer overhead and improving cost efficiency.
+\item Developed \textbf{Shell scripts using AWS CLI} to automatically stop unused DEV instances during non-working hours, optimizing resource utilization and reducing infrastructure costs.
+\item Implemented \textbf{Auto Scaling Groups} integrated with \textbf{CloudWatch alarms} to trigger scale-out actions at \textbf{70\% CPU utilization}, improving application availability and handling dynamic traffic loads efficiently.
+ 
+\end{itemize}
+
+%==================== HEMS ====================
+\textbf{Project: HEMS – Hybrid Energy Management System}
+
+\begin{itemize}[leftmargin=*]
+  \item Engineered controlled patch deployments in on-premise production environments using \textbf{Ansible Playbooks} with Jinja2 templating, ensuring consistent and reliable releases.
+
+  \item Automated backup workflows using Python scripts for pre/post deployment, achieving rollback recovery time under \textbf{10 minutes}.
+
+  \item Automated operational tasks using \textbf{Bash and Python} (process monitoring, log parsing, network checks), reducing manual effort by \textbf{45\%} and improving system reliability.
+
+  \item Operated \textbf{OS-level debugging and Linux system administration} (Ubuntu), including network troubleshooting, process analysis, and system diagnostics to efficiently resolve production issues.
+
+\item Improved observability and reduced \textbf{downtime by 30\%} by implementing automated \textbf{shell-based health checks} scheduled via cron jobs, along with proactive alerting and log analysis.
+\end{itemize}
+%==================== CERTIFICATIONS ====================
+\section{Certifications}
+
+\href{https://www.credly.com/earner/earned/share/797b33f0-22d8-4ec3-b618-2cd66a3e8d4c}{AWS Certified Solutions Architect -- Associate} \hfill
+\href{https://www.credly.com/earner/earned/badge/5d2f5f47-fb92-48ec-8b89-182033121776}{HashiCorp Certified: Terraform Associate (003)}
+\href{https://learn.microsoft.com/en-us/users/asish-4946/credentials/9393030a2f301dd5}{Microsoft Certified:  (AZ-900)}
+%==================== EDUCATION ====================
+\section{Education}
+
+\textbf{Bachelor of Computer Science} \\
+Andhra University \hfill April 2023
+
+\end{document}
